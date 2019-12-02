@@ -51,13 +51,16 @@ public class Solution {
         int k = 5;
 
 
-        int[] arry = new int[5];
-        int result =0;
-        int max;
-        int min ;
+        long[] arry = new long[5];
+
+        //List<int> arry = Arrays.asList(A);
+        long result =0;
+        long max;
+
+        long min ;
         for(int x = 0 ; x < arry.length ; x++)
         {
-            result = result + arr[x];
+            result =result + arr[x];
 
         }
         if(result > arr.length)
@@ -71,11 +74,11 @@ public class Solution {
 
             max = Arrays.stream(arry)
                         .max()
-                        .getAsInt();
+                        .getAsLong();
 
             min = Arrays.stream(arry)
                         .min()
-                        .getAsInt();
+                        .getAsLong();
 
           System.out.println( min + " " + max);
   
